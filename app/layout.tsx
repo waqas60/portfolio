@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} mx-auto min-h-screen max-w-200 border bg-zinc-50 font-sans antialiased dark:bg-black`}
+        className={`${inter.variable} mx-auto min-h-screen max-w-200 bg-zinc-50 font-sans antialiased dark:bg-black`}
       >
         <Navbar />
         {children}
