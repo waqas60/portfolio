@@ -1,14 +1,16 @@
+import Projects from "@/components/Projects";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="px-10">
-      <main className="flex items-center justify-between">
-        <div className="flex flex-col gap-2">
-          <h1 className="text-5xl/relaxed font-semibold">Muhammad Waqas</h1>
-          <p className="w-fit rounded-full border border-dashed border-neutral-400 px-2 py-1 text-sm">
-            FullStack Developer
-          </p>
+      <main className="flex justify-between flex-col">
+        <div className="flex gap-2 items-center">
+          <div>
+            <h1 className="text-5xl/relaxed font-semibold">Muhammad Waqas</h1>
+            <p className="w-fit rounded-full border border-dashed border-neutral-400 px-2 py-1 text-sm">
+              FullStack Developer
+            </p>
           <div className="leading-wider mt-3 max-w-[70%] text-base tracking-wider text-neutral-700">
             <p className="w-full">
               Love both <span className="font-bold">Design</span> and
@@ -18,9 +20,9 @@ export default function Home() {
               So, that means I can create beautiful and functional websites.
             </p>
           </div>
-        </div>
+          </div>
 
-        <div className="pointer-events-none overflow-hidden rounded-3xl bg-neutral-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] select-none">
+          <div className="pointer-events-none overflow-hidden rounded-3xl bg-neutral-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] select-none">
           <Image
             alt=""
             src={"/profile.jpg"}
@@ -30,6 +32,12 @@ export default function Home() {
           />
           {/* <div className="h-0.5 bg-linear-to-l via-cyan-400 to-transparent"/> */}
         </div>
+        </div>
+
+        
+        
+        {/* Projects */}
+        <Projects/>
       </main>
     </div>
   );
