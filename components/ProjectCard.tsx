@@ -1,12 +1,12 @@
 import {  Github, LucideArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-type ProjectCardProps = {
+export type ProjectCardProps = {
   title: string;
   description: string;
   projectLink: string;
   githubLink: string;
-  tasgsName: string[];
+  tagsName: string[];
 };
 
 export default function ProjectCard({
@@ -14,7 +14,7 @@ export default function ProjectCard({
   description,
   projectLink,
   githubLink,
-  tasgsName,
+  tagsName,
 }: ProjectCardProps) {
   return (
     <div>
@@ -40,7 +40,7 @@ export default function ProjectCard({
         </div>
 
         <div className="flex items-center gap-2">
-          {tasgsName.map((tag, index) => {
+          {tagsName.map((tag, index) => {
             return (
               <span key={index} className="rounded-full p-2 text-xs italic">
                 {tag}

@@ -1,8 +1,8 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-const projects = [
+const projects: ProjectCardProps[] = [
   {
     title: "Diarycover",
     description:
@@ -31,7 +31,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="mt-20">
+    <div className="my-20">
       <div>
         <h1 className="text-4xl font-bold text-neutral-800">Projects</h1>
       </div>
@@ -44,7 +44,7 @@ export default function Projects() {
               description={project.description}
               projectLink={project.projectLink}
               githubLink={project.githubLink}
-              tasgsName={project.tagsName}
+              tagsName={project.tagsName}
             />
           );
         })}
