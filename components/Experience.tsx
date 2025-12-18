@@ -26,7 +26,7 @@ export default function Experience() {
   return (
     <div className="mb-20">
       <div>
-        <h1 className="text-4xl font-bold text-neutral-800">Experience</h1>
+        <h1 className="text-4xl font-bold text-neutral-800 dark:text-neutral-50">Experience</h1>
       </div>
 
       <div className="my-8 grid grid-cols-1 gap-4">

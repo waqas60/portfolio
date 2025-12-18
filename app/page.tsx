@@ -12,12 +12,12 @@ export default function Home() {
             <p className="w-fit rounded-full border border-dashed border-neutral-400 px-2 py-1 text-sm">
               FullStack Developer
             </p>
-            <div className="leading-wider mt-3 max-w-[70%] text-base tracking-wider text-neutral-700">
+            <div className="leading-wider mt-3 max-w-[70%] text-base tracking-wider text-neutral-700 dark:text-neutral-50">
               <p className="w-full">
                 Love both <span className="font-bold">Design</span> and
                 <span className="font-bold"> Development</span>.
               </p>
-              <p>
+              <p className="">
                 So, that means I can create beautiful and functional websites.
               </p>
             </div>
