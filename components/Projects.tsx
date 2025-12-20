@@ -33,7 +33,7 @@ export default function Projects() {
   return (
     <div className="my-20">
       <div>
-        <h1 className="text-4xl font-bold text-neutral-800 dark:text-neutral-50 ">Projects</h1>
+        <h1 className="text-4xl font-bold text-neutral-950 dark:text-neutral-50">Projects</h1>
       </div>
       <div className="my-8 grid grid-cols-2 gap-4">
         {projects.map((project, index) => {
