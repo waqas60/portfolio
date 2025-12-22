@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pointer-events-none overflow-hidden rounded-3xl bg-neutral-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] select-none mr-20">
+          <div className="pointer-events-none mr-20 overflow-hidden rounded-3xl bg-neutral-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] select-none">
             <Image
               alt=""
               src={"/profile.jpg"}
