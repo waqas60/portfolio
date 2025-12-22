@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="px-10">
       <main className="flex flex-col justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between">
           <div>
             <h1 className="text-5xl/relaxed font-semibold">Muhammad Waqas</h1>
             <p className="w-fit rounded-full border border-dashed border-neutral-400 px-2 py-1 text-sm">
@@ -14,8 +14,8 @@ export default function Home() {
             </p>
             <div className="leading-wider mt-3 max-w-[70%] text-base tracking-wider dark:text-neutral-50">
               <p className="w-full">
-                Love both <span className="font-bold text-xl">Design</span> and
-                <span className="font-bold text-xl"> Development</span>.
+                Love both <span className="text-xl font-bold">Design</span> and
+                <span className="text-xl font-bold"> Development</span>.
               </p>
               <p className="">
                 So, that means I can create beautiful and functional websites.
@@ -23,12 +23,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pointer-events-none overflow-hidden rounded-3xl bg-neutral-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] select-none">
+          <div className="pointer-events-none overflow-hidden rounded-3xl bg-neutral-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] select-none mr-20">
             <Image
               alt=""
               src={"/profile.jpg"}
-              width={130}
-              height={130}
+              width={140}
+              height={140}
               className="rounded-3xl p-1"
             />
             {/* <div className="h-0.5 bg-linear-to-l via-cyan-400 to-transparent"/> */}
